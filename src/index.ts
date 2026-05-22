@@ -18,9 +18,6 @@ app.use(cors({
 }));
 app.use(express.json());
 
-app.listen(PORT,()=>{
-    console.log("Server is running on port",PORT);
-})
 
 // 2. HTTP Routes (Place this BEFORE Socket server attachment so it resolves instantly)
 app.get("/", (req, res) => {
